@@ -1,0 +1,233 @@
+/* ---------------------------------------- */
+/* == ÉLÉMENTS PRINCIPAUX */
+/*---------------------------------------- */
+body
+{
+    width: 100%;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+#grand_bloc_droite
+{
+    width: 95%;
+    margin: auto;
+}
+
+#grand_bloc_gauche
+{
+    background-color: #ffa207;
+    width: 100%;
+} 
+
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+p
+{
+    margin: 0;
+}
+
+h4, ul, h2
+{
+    padding: 0;
+    margin: 0;
+}
+
+h1
+{
+    margin-bottom: 0;
+}
+
+ul li
+{
+    list-style: none;
+}
+/* ---------------------------------------- */
+         /*l'image avatar*/
+/*---------------------------------------- */
+ #avatar
+{
+    width: 50%;
+    margin: auto;
+    padding: 10px 0 10px 0;
+}
+/* ---------------------------------------- */
+         /*Mes contacts*/
+/*---------------------------------------- */
+.coordonees
+{
+    width: 80%;
+    margin: auto;
+}
+.coordonees p
+{
+    margin-bottom: 15px;
+    padding: 0;
+}
+/* ---------------------------------------- */
+        /*A propos de moi*/
+/*---------------------------------------- */ 
+/*les titre*/
+.contact 
+{
+    border: 1px solid;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(54, 54, 56);
+    color: #ffa207;
+}
+/*les pargraphe*/
+.paragraphe
+{
+    text-align: justify;
+    padding-left: 5px;
+    padding: 25px;
+} 
+/* ---------------------------------------- */
+        /*pour positinner les icones*/
+/*---------------------------------------- */
+#icone
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+/* ---------------------------------------- */
+    /*les titres nom, prènom et metier*/
+/*---------------------------------------- */ 
+/*pour mettre une partie du titre en or*/
+.fousseynou
+{
+    color: #ffa207;
+}
+/*souligner une partie du mot intégrateur*/
+.integ
+{
+    border-bottom: 3px #ffa207 solid;
+}
+/*le premier titre (fousseynou)*/
+.fou
+{
+    padding-top: 5vh;
+    font-size: 2em;
+}
+/* ---------------------------------------- */
+        /*diplome et formation*/
+/*---------------------------------------- */ 
+.annee, .div_parent
+{
+    padding-bottom: 2vh;
+}
+
+/*les titres (formation, expérience et recommandation*/
+.titre
+{ 
+    border-bottom: 3px #ffa207 solid;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* ---------------------------------------- */
+        /*les deux blocks du bas*/
+/*---------------------------------------- */
+#recommandation
+{
+    display: block;
+    width: 100%;
+}
+.recommandation
+{
+    height: 50%;
+    padding-bottom: 2vh;
+}
+
+.formation, .annee, .recommandation
+{
+    padding-left: 2vh;
+}
+
+
+@media screen and (min-width: 412px)
+{
+    .bloc_page
+    {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    /* ---------------------------------------- */
+            /*les deux block*/
+    /*---------------------------------------- */
+    #grand_bloc_gauche
+    {
+        width: 29%; 
+    }
+
+    #grand_bloc_droite
+    {
+        width: 70%;
+    }
+ 
+    /*block_droite*/
+    .div_parent
+    {
+        display: flex;
+        width: 100%;
+        padding-bottom: 5vh;
+    }
+    .annee
+    {
+        width: 20%;
+        padding: 0;
+        margin: 0;
+    }
+    .formation
+    {
+        width: 78%;
+        padding: 0;
+        margin: 0;
+    }
+    /* ---------------------------------------- */
+            /*  alignement du text*/
+    /*---------------------------------------- */
+    .paragraphe
+    {
+        margin-bottom: 60%;
+    } 
+
+    .formation 
+    {
+        padding-left: 15vh;
+    } 
+    /* ---------------------------------------- */
+        /*les deux blocks du bas*/
+    /*---------------------------------------- */
+    .lsr
+    {
+        bottom: 0; 
+        padding-bottom: 5px;
+    }
+    .recommandation
+    {
+        padding-left: 0;
+    }
+
+    #recommandation
+    {
+        display: flex;
+        width: 100%;
+    }
+
+    .recommandation
+    {
+        width: 48%;
+        margin: 15px 0 0 0;
+        justify-content: space-between;
+    }
+}
